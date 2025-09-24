@@ -8,7 +8,7 @@ class Greeting
 {
     const DEFAULT_NAME = 'world';
 
-    public function sayHello(string $name = self::DEFAULT_NAME)
+    public function sayHello(string $name = self::DEFAULT_NAME): string
     {
         return sprintf('Olá, %s!', $name);
     }
