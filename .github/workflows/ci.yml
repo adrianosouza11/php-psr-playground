@@ -18,7 +18,7 @@ jobs:
               run: composer install --no-interaction --prefer-dist
 
             - name: Run tests
-              run: vendor/bin/phpunit --colors=never
+              run: vendor/bin/phpunit tests --colors=never
 
             - name: Check coding standard (PHPCS)
               run: vendor/bin/phpcs --standard=phpcs.xml
