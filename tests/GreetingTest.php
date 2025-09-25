@@ -11,7 +11,7 @@ class GreetingTest extends TestCase
 {
     protected $greeting;
 
-    public function setUp() : void
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -22,7 +22,7 @@ class GreetingTest extends TestCase
      * @test
      * @return void
      */
-    public function testSayHelloDefault() : void
+    public function testSayHelloDefault(): void
     {
         $this->assertStringContainsString('world', $this->greeting->sayHello());
     }
@@ -31,7 +31,7 @@ class GreetingTest extends TestCase
      * @test
      * @return void
      */
-    public function testSayHelloWithName() : void
+    public function testSayHelloWithName(): void
     {
         $this->assertSame('Olá, Sandy e Junior Silva!', $this->greeting->sayHello('Sandy e Junior Silva'));
     }
