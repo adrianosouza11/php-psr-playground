@@ -6,7 +6,7 @@ namespace App\Utils;
 
 class Greeting
 {
-    const DEFAULT_NAME = 'world';
+    public const DEFAULT_NAME = 'world';
 
     public function sayHello(string $name = self::DEFAULT_NAME): string
     {
