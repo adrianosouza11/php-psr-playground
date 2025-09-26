@@ -2,8 +2,8 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use App\Utils\Greeting;
+use App\Services\UserService;
 
-$greeting = new Greeting();
+$greeting = new UserService();
 
-echo $greeting->sayHello('Adriano') . PHP_EOL;
+echo $greeting->welcome('Adriano') . PHP_EOL;
